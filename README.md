@@ -1,2 +1,2 @@
 # PersonalWebsite
-a website about me
+a website about myself
