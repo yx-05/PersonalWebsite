@@ -139,7 +139,19 @@ header p, header nav{
 .content2{
     background-color: aliceblue;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
+    width: 100%;
+}
+
+.content2 div{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: #44fcf3 0.125em solid;
+    border-radius: 0.25em;
+    padding: 15% 10%;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.2), 0 0 0.45em #44fcf3;
+    box-shadow: inset 0 0 0.5em 0 #44fcf3, 0 0 0.5em 0 #44fcf3;
 }
