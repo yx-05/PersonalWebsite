@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Raleway:wght@700&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Raleway:wght@700&family=ZCOOL+XiaoWei&display=swap');
 
 *,
 *::before,
@@ -11,6 +11,11 @@
 
 body{
     background-color: #050A30;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -86,9 +91,8 @@ header p, header nav{
 
 .content1ContainerSize{
     width: 50%;
-    height: 55vh;
+    height: 70vh;
     margin: 50px 10vw;
-    border: solid;
 }
 
 .aboutMe{
@@ -98,8 +102,10 @@ header p, header nav{
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-direction: column;
     align-content: center;
-    padding: 50px 20px; 
+    justify-content: space-evenly;
 
 }
 
@@ -116,7 +122,6 @@ header p, header nav{
 .aboutMe h2{
     font-size: 2em;
     font-family: 'Barlow Condensed', sans-serif;
-    margin-top: 10vh;
     color:aliceblue;
 }
 
@@ -137,21 +142,76 @@ header p, header nav{
 }
 
 .content2{
-    background-color: aliceblue;
+    background-color: rgb(4, 0, 36);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content2 p{
+    color: #7EC8E3;
+    font-size: 3em;
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+}
+
+.content2 .Views{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
-    width: 100%;
 }
 
-.content2 div{
-    display: inline-block;
+.content2 .Views div{
+    height: 65vh;
+    width: 23vw;
+    
     cursor: pointer;
+    
     text-decoration: none;
-    border: #44fcf3 0.125em solid;
-    border-radius: 0.25em;
-    padding: 15% 10%;
-    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.2), 0 0 0.45em #44fcf3;
-    box-shadow: inset 0 0 0.5em 0 #44fcf3, 0 0 0.5em 0 #44fcf3;
+    
+    border: #7EC8E3 0.25em solid;
+    border-radius: 1.0em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.2), 0 0 0.75em #7EC8E3;
+    box-shadow: inset 0 0 1.5em 0 #7EC8E3, 0 0 1.5em 0 #7EC8E3;
+    transition: all 0.3s ease 0s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content2 .Views div:hover{
+    height: 68vh;
+    width: 24vw;
+}
+.content2 .Views div p{
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    color:rgb(255, 255, 255);
+    font-size: 3em;
+}
+
+.content2 .Views div span{
+    color: #7EC8E3;
+    font-size: 10rem;
+}
+
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: rgba(255,255,255,0.08);
+    box-shadow: 0px -10px 10px rgba(255,255,255,0.08);
 }
