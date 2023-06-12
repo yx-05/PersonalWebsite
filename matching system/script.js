@@ -1,5 +1,6 @@
 var percentage = document.getElementById("percentage");
 var button = document.getElementsByClassName("button");
+var colorBox = document.getElementById("colorBox");
 
 const red = "red";
 const yellow = "yellow";
@@ -30,5 +31,5 @@ function output(){
     console.log(mbti);
     console.log(mbtis[mbti]);
     
-    percentage.innerHTML = mbtis[mbti];
+    colorBox.style.backgroundColor = mbtis[mbti];
 }

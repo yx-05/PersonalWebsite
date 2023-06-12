@@ -53,23 +53,33 @@
     </div>
     <div class="content3">
         <p>你与我的适配程度</p>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-            <div id="myDropdown" class="dropdown-content">
-              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-              <a href="#about">About</a>
-              <a href="#base">Base</a>
-              <a href="#blog">Blog</a>
-              <a href="#contact">Contact</a>
-              <a href="#custom">Custom</a>
-              <a href="#support">Support</a>
-              <a href="#tools">Tools</a>
-            </div>
-          </div>
+        <div>
+            <select name="mbti" id="mbti">
+                <option value="intj" class="intj">intj</option>
+                <option value="intp" class="intp">intp</option>
+                <option value="entj" class="entj">entj</option>
+                <option value="entp" class="entp">entp</option>
+                <option value="infj" class="infj">infj</option>
+                <option value="infp" class="infp">intj</option>
+                <option value="enfj" class="enfj">enfj</option>
+                <option value="enfp" class="enfp">enfp</option>
+                <option value="istj" class="istj">istj</option>
+                <option value="istp" class="istp">istp</option>
+                <option value="estj" class="estj">estj</option>
+                <option value="estp" class="estp">estp</option>
+                <option value="isfj" class="isfj">isfj</option>
+                <option value="isfp" class="isfp">isfp</option>
+                <option value="esfj" class="esfj">esfj</option>
+                <option value="esfp" class="esfp">esfp</option>
+              </select>
+              <p>Percentage</p>
+              <div id="colorBox" style="background-color: black; height: 10px; width: 10px;"></div>
+              <button class="button" onclick="output()">Check</button>
+        </div>
     </div>
     <footer>
         lol
     </footer>
-    
+    <script src="/matching system/script.js"></script>
 </body>
 </html>
