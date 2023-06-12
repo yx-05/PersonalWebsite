@@ -9,13 +9,26 @@
 <body>
     <div>
         <select name="mbti" id="mbti">
-            <option value="intp" class="intp">intp</option>
             <option value="intj" class="intj">intj</option>
-            <option value="entp" class="entp">entp</option>  
+            <option value="intp" class="intp">intp</option>
+            <option value="entj" class="entj">entj</option>
+            <option value="entp" class="entp">entp</option>
+            <option value="infj" class="infj">infj</option>
+            <option value="infp" class="infp">intj</option>
+            <option value="enfj" class="enfj">enfj</option>
+            <option value="enfp" class="enfp">enfp</option>
+            <option value="istj" class="istj">istj</option>
+            <option value="istp" class="istp">istp</option>
+            <option value="estj" class="estj">estj</option>
+            <option value="estp" class="estp">estp</option>
+            <option value="isfj" class="isfj">isfj</option>
+            <option value="isfp" class="isfp">isfp</option>
+            <option value="esfj" class="esfj">esfj</option>
+            <option value="esfp" class="esfp">esfp</option>
           </select>
           <p>Percentage</p>
-          <p class="percentage">0%</p>
-          <button class="button" onclick="log()">Check</button>
+          <p id="percentage">%</p>
+          <button class="button" onclick="output()">Check</button>
     </div>
 
     <script src="script.js"></script>
