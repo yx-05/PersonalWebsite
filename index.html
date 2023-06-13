@@ -52,30 +52,35 @@
         </div>
     </div>
     <div class="content3">
-        <p>你与我的适配程度</p>
-        <div>
-            <select name="mbti" id="mbti">
-                <option value="intj" class="intj">intj</option>
-                <option value="intp" class="intp">intp</option>
-                <option value="entj" class="entj">entj</option>
-                <option value="entp" class="entp">entp</option>
-                <option value="infj" class="infj">infj</option>
-                <option value="infp" class="infp">intj</option>
-                <option value="enfj" class="enfj">enfj</option>
-                <option value="enfp" class="enfp">enfp</option>
-                <option value="istj" class="istj">istj</option>
-                <option value="istp" class="istp">istp</option>
-                <option value="estj" class="estj">estj</option>
-                <option value="estp" class="estp">estp</option>
-                <option value="isfj" class="isfj">isfj</option>
-                <option value="isfp" class="isfp">isfp</option>
-                <option value="esfj" class="esfj">esfj</option>
-                <option value="esfp" class="esfp">esfp</option>
-              </select>
-              <p>Percentage</p>
-              <div id="colorBox" style="background-color: black; height: 10px; width: 10px;"></div>
-              <button class="button" onclick="output()">Check</button>
-        </div>
+        <h1>Compatibility Test</h1>
+        <h2>A small test based on MBTI</h2>
+        <select name="mbti" id="mbti">
+            <option disabled selected>MBTI</option>
+            <option value="intj" class="intj">intj</option>
+            <option value="intp" class="intp">intp</option>
+            <option value="entj" class="entj">entj</option>
+            <option value="entp" class="entp">entp</option>
+            <option value="infj" class="infj">infj</option>
+            <option value="infp" class="infp">intj</option>
+            <option value="enfj" class="enfj">enfj</option>
+            <option value="enfp" class="enfp">enfp</option>
+            <option value="istj" class="istj">istj</option>
+            <option value="istp" class="istp">istp</option>
+            <option value="estj" class="estj">estj</option>
+            <option value="estp" class="estp">estp</option>
+            <option value="isfj" class="isfj">isfj</option>
+            <option value="isfp" class="isfp">isfp</option>
+            <option value="esfj" class="esfj">esfj</option>
+            <option value="esfp" class="esfp">esfp</option>
+          </select>
+          <div id="colorBox"></div>
+          <button class="button" onclick="output()">Check</button>
+          <div class="MBTICat">
+            <p><span></span>RED - Uhoh, </p>
+            <p><span></span>YELLOW - </p>
+            <p><span></span>BLUE - </p>
+            <p><span></span>GREEN - Hooray, </p>
+          </div>
     </div>
     <footer>
         lol

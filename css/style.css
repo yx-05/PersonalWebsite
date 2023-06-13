@@ -113,13 +113,13 @@ header p, header nav{
     margin: 0px 30px;
 }
 
-.aboutMe h1{
+.aboutMe h1, .content3 h1{
     font-size: 5em;
     font-family: 'Raleway', sans-serif;
     color: #7EC8E3;
 }
 
-.aboutMe h2{
+.aboutMe h2, .content3 h2{
     font-size: 2em;
     font-family: 'Barlow Condensed', sans-serif;
     color:aliceblue;
@@ -207,6 +207,27 @@ header p, header nav{
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 10vh;
+}
+
+#mbti{
+    padding: 1vh 0vw;
+    padding-left: 1vw;
+    border-radius: 10px;
+    background-color: #7EC8E3;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+#mbti option{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+}
+
+#colorBox{
+    padding: 4vh 4vw;
+    background-color: black;
 }
 
 footer{
