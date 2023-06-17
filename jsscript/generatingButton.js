@@ -8,6 +8,12 @@ function elementFromHtml(html){
     return template.content.firstElementChild;
 }
 
-const button = elementFromHtml(`<div>button</div>`);
+const button = elementFromHtml(`<div><a class="button" href="read.html">button</a><div>`);
 
 buttonContainer.appendChild(button);
+
+button.addEventListener('click', passCode());
+
+function passCode(){
+    localStorage.setItem("code", "yx01.txt");
+}

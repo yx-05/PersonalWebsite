@@ -1,0 +1,9 @@
+#buttonContainer{
+    margin-top: 12vh;
+}
+
+.button{
+    width: 10vw;
+    background-color: red;
+    cursor: pointer;
+}

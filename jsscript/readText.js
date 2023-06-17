@@ -1,5 +1,7 @@
 const textArea = document.getElementById("textarea")
 
-fetch('/articles/yx01.txt')
+text = "/articles/" + localStorage.getItem("code");
+
+fetch(text)
   .then(response => response.text())
   .then(text => textArea.innerText = text)
