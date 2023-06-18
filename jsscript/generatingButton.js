@@ -1,4 +1,4 @@
-const buttonContainer = document.getElementById("buttonContainer");
+/*const buttonContainer = document.getElementById("buttonContainer");
 
 function elementFromHtml(html){
     const template = document.createElement("template");
@@ -7,12 +7,6 @@ function elementFromHtml(html){
 
     return template.content.firstElementChild;
 }
-
-fetch("/articles/articlesList.json")
-    .then()
-
-
-
 
 
 
@@ -25,3 +19,10 @@ button.addEventListener('click', passCode());
 function passCode(){
     localStorage.setItem("code", "yx01.txt");
 }
+*/
+
+let listOfArticles = [];
+
+fetch("/articles/articlesList.json")
+.then(response => response.json())
+.catch(error => console.log(error))
