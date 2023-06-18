@@ -8,6 +8,14 @@ function elementFromHtml(html){
     return template.content.firstElementChild;
 }
 
+fetch("/articles/articlesList.json")
+    .then()
+
+
+
+
+
+
 const button = elementFromHtml(`<div><a class="button" href="read.html">button</a><div>`);
 
 buttonContainer.appendChild(button);
