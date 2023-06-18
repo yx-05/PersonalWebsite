@@ -1,4 +1,4 @@
-/*const buttonContainer = document.getElementById("buttonContainer");
+const buttonContainer = document.getElementById("buttonContainer");
 
 function elementFromHtml(html){
     const template = document.createElement("template");
@@ -8,21 +8,22 @@ function elementFromHtml(html){
     return template.content.firstElementChild;
 }
 
-
-
-const button = elementFromHtml(`<div><a class="button" href="read.html">button</a><div>`);
-
-buttonContainer.appendChild(button);
-
-button.addEventListener('click', passCode());
-
-function passCode(){
-    localStorage.setItem("code", "yx01.txt");
+function passCode(code){
+    localStorage.setItem("code", String(code));
 }
-*/
 
-let listOfArticles = [];
+async function getJSONData(){
+    const response = await fetch("/articles/articlesList.json");
+    const jsonData = await response.json();
 
-fetch("/articles/articlesList.json")
-.then(response => response.json())
-.catch(error => console.log(error))
+    for(let i in jsonData){
+        const button = elementFromHtml(`<div><a class="button" id="` + jsonData[i]["code"] + `" href="read.html" onClick="passCode(this.id)">` + jsonData[i]["name"] + `</a><div>`);
+
+        buttonContainer.appendChild(button);
+
+        
+    }
+
+}
+
+getJSONData();
