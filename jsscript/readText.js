@@ -6,4 +6,4 @@ fetch(text)
   .then(response => response.text())
   .then(text => textArea.innerText = text);
 
-localStorage.clear();
+//localStorage.clear();
