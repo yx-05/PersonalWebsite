@@ -13,7 +13,7 @@ function passCode(code){
 }
 
 async function getJSONData(){
-    const response = await fetch("/articles/articlesList.json");
+    const response = await fetch("../articles/articlesList.json");
     const jsonData = await response.json();
 
     for(let i in jsonData){

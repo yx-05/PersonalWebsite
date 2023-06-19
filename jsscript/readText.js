@@ -1,6 +1,6 @@
 const textArea = document.getElementById("textarea")
 
-text = "/articles/" + localStorage.getItem("code") + ".txt";
+text = "../articles/" + localStorage.getItem("code") + ".txt";
 
 fetch(text)
   .then(response => response.text())
