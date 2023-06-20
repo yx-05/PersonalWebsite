@@ -1,9 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Raleway:wght@700&family=ZCOOL+XiaoWei&display=swap');
+
 #buttonContainer{
-    margin-top: 12vh;
+    margin-top: 18vh;
+    margin-bottom: 20vh;
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .button{
-    width: 10vw;
-    background-color: red;
+    margin: 15px 0%;
+    width: 80%;
+    height: 15vh;
     cursor: pointer;
+    
+    text-decoration: none;
+    
+    display: flex;
+    align-items: center;
+
+    border: #7EC8E3 0.25em solid;
+    border-radius: 1.0em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.2), 0 0 0.75em #7EC8E3;
+    box-shadow: inset 0 0 1.5em 0 #7EC8E3, 0 0 1.5em 0 #7EC8E3;
+    transition: all 0.3s ease 0s;
 }
+
+.button:hover{
+    border: #ffffff 0.25em solid;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.2), 0 0 0.75em #ffffff;
+    box-shadow: inset 0 0 1.5em 0 #ffffff, 0 0 1.5em 0 #ffffff;
+    color: #ffffff;
+}
+
+.button a{
+    height: 100%;
+    width: 100%;
+    margin-left: 5%;
+    font-size: 1.75em;
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button a:hover{
+    color: #ffffff;
+}
+

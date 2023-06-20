@@ -97,6 +97,11 @@
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.2), 0 0 0.75em #7EC8E3;
     box-shadow: inset 0 0 1.5em 0 #7EC8E3, 0 0 1.5em 0 #7EC8E3;
     transition: all 0.3s ease 0s;
+}
+
+.content2 .Views div a{
+    width: 100%;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
@@ -108,6 +113,7 @@
     height: 68vh;
     width: 24vw;
 }
+
 .content2 .Views div p{
     font-family: 'ZCOOL XiaoWei', sans-serif;
     color:rgb(255, 255, 255);

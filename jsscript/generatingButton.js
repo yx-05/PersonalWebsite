@@ -17,7 +17,7 @@ async function getJSONData(){
     const jsonData = await response.json();
 
     for(let i in jsonData){
-        const button = elementFromHtml(`<div><a class="button" id="` + jsonData[i]["code"] + `" href="read.html" onClick="passCode(this.id)">` + jsonData[i]["name"] + `</a><div>`);
+        const button = elementFromHtml(`<div class ="button"><a id="` + jsonData[i]["code"] + `" href="read.html" onClick="passCode(this.id)">` + jsonData[i]["name"] + `</a><div>`);
 
         buttonContainer.appendChild(button);
 
