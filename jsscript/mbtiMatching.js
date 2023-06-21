@@ -32,4 +32,21 @@ function output(){
     console.log(mbtis[mbti]);
     
     colorBox.style.backgroundColor = mbtis[mbti];
+    colorBox.animate(
+        [
+            {
+                // from
+                boxShadow: "none",
+            },
+            {
+                // to
+                boxShadow: "inset 0 0 2.0em 0 #7EC8E3, 0 0 2.0em 0 #7EC8E3",
+            },
+            {
+                // from
+                boxShadow: "none",
+            }
+          ],
+          2000
+    )
 }

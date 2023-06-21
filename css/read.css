@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Noto+Serif+SC:wght@500&family=Raleway:wght@700&family=ZCOOL+XiaoWei&display=swap');
+
 #textarea{
     width: 100%;
-    margin-top: 12vh;
+    margin-top: 15vh;
     margin-bottom: 12vh;
     padding: 0% 10vw;
+
+    font-size: 1.5em;
+    font-family: 'Noto Serif SC', serif;
+    letter-spacing: 0.1em;
+    color: rgb(192, 192, 192) ;
 }
