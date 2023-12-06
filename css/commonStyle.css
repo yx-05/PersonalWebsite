@@ -113,3 +113,14 @@ footer p{
     letter-spacing: 0.1em;
     font-weight: bold;
 }
+
+@media screen and (max-width: 600px) {
+    footer div a{
+        font-size: 1.5em;
+        margin: 0px 2.5vw;
+    }
+    
+    footer p{
+        margin: 0 5% 1% 5%; 
+    }
+}

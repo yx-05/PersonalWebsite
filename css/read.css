@@ -11,3 +11,10 @@
     letter-spacing: 0.1em;
     color: rgb(192, 192, 192) ;
 }
+
+@media screen and (max-width: 600px) {
+    #textarea{
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+    }
+}
