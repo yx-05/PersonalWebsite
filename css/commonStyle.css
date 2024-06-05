@@ -81,6 +81,10 @@ header{
     color: #E9F8F9;
 }
 
+.navLinks .hideOnDesktop{
+    display: none;
+}
+
 footer{
     position: absolute;
     bottom: 0;
@@ -116,7 +120,8 @@ footer p{
 
 .sideBar{
     position: fixed;
-    padding: 0;
+    padding-top: 20px;
+    padding-left: 10px;
     top: 0;
     right: 0;
     height: 100vh;
@@ -145,6 +150,18 @@ footer p{
 }
 
 @media screen and (max-width: 600px) {
+    .navLinks .hideOnMobile{
+        display: none;
+    }
+    
+    .navLinks .hideOnDesktop{
+        display: block;
+    }
+
+    .navLinks li a::after{
+        display: none;
+    }
+
     footer div a{
         font-size: 1.5em;
         margin: 0px 2.5vw;

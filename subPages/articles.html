@@ -13,20 +13,24 @@
 <body>
     <header>
         <a href="../index.html" class="logo">YxSpace</a>
-        <nav>
+        <nav aria-label="desktop view">
             <ul class="navLinks">
-                <li><a href="../index.html">About Me</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="links.html">Links</a></li>
-            </ul>
-            <ul class="navLinks sideBar">
-                <li><a href="../index.html">About Me</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="links.html">Links</a></li>
+                <li class="hideOnMobile"><a href="../index.html">About Me</a></li>
+                <li class="hideOnMobile"><a href="#">Articles</a></li>
+                <li class="hideOnMobile"><a href="links.html">Links</a></li>
+                <li class="hideOnDesktop" onClick="showSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
     </header>
-    
+    <nav aria-label="side bar">
+        <ul class="navLinks sideBar">
+            <li onClick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="../index.html">About Me</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+    </nav>
+
     <div id="buttonContainer">
     </div>
 
@@ -38,5 +42,6 @@
         <p>&copy;Personal Website made from scratch. All codes are free to copy.</p>
     </footer>
     <script src="../jsscript/generatingButton.js"></script>
+    <script src="../jsscript/sideButton.js"></script>
 </body>
 </html>
