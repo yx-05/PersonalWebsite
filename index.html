@@ -13,14 +13,23 @@
 <body>
     <header>
         <a href="index.html" class="logo">YxSpace</a>
-        <nav>
+        <nav aria-label="desktop view">
             <ul class="navLinks">
                 <li><a href="#">About Me</a></li>
                 <li><a href="subPages/articles.html">Articles</a></li>
                 <li><a href="subPages/links.html">Links</a></li>
+                <li onClick="showSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
     </header>
+    <nav aria-label="side bar">
+        <ul class="navLinks sideBar"
+        >
+            <li><a href="#">About Me</a></li>
+            <li><a href="subPages/articles.html">Articles</a></li>
+            <li><a href="subPages/links.html">Links</a></li>
+        </ul>
+    </nav>
     <div class="content1">
         <div class="aboutMe content1ContainerSize">
             <h1>I'm a human</h1>
@@ -101,5 +110,6 @@
     </footer>
     <script src="jsscript/mbtiMatching.js"></script>
     <script src="jsscript/passCode.js"></script>
+    <script scr="jsscript/sideButton.js"></script>
 </body>
 </html>
